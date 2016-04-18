@@ -13,7 +13,7 @@
     "terminal-notifier",
     "notify"
   ],
-  "repository": "git@github.com:blainesch/electron-notifier.git",
+  "repository": "git@github.com:blainesch/electron-notifications.git",
   "author": "Blaine Schmeisser",
   "license": "MIT"
 }
