@@ -2,6 +2,8 @@
 
 A node module for sending notifications in electron applications.
 
+![screenshot](assets/screenshot.png)
+
 ## Quick Usage
 
 ~~~ javascript
