@@ -5,7 +5,7 @@ A node module for sending notifications in electron applications.
 ## Quick Usage
 
 ~~~ javascript
-const notifier = require('electron-notifier')
+const notifier = require('electron-notifications')
 
 // Just title
 notifier.notify('Calendar')
