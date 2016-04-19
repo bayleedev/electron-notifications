@@ -1,4 +1,4 @@
-## Electron Notifier
+## Electron Notifications
 
 A node module for sending notifications in electron applications.
 
