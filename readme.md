@@ -23,8 +23,8 @@ notifier.notify('Calendar', {
 ## Introduction
 
 When you create a new notification, your notification is queued, since we only
-display one at a time. You get a [BrowserWindow](browserwindow) instance back
-from the call.
+display one at a time. Each notification is a [BrowserWindow](browserwindow)
+instance, so it's completely cross platform.
 
 ## Options
 
