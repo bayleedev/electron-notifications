@@ -20,6 +20,12 @@ notifier.notify('Calendar', {
 })
 ~~~
 
+## Installation
+
+~~~
+npm install --save electron-notifications
+~~~
+
 ## Introduction
 
 When you create a new notification, your notification is queued, since we only
