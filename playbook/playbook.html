@@ -7,8 +7,9 @@
   <body>
     <div id="playbook">
       <h2>Electron Notification Playbook</h2>
-      <div class="sample">
+      <section class="sample">
         <div class="talk">
+          <h3>Simple Example</h3>
           <p>The minimum requirements.</p>
           <button for="simple">Try it!</button>
         </div>
@@ -18,10 +19,11 @@ const notifier = require('electron-notifications')
 notifier.notify('Calendar')
           </textarea>
         </div>
-      </div>
-      <div class="sample">
+      </section>
+      <section class="sample">
         <div class="talk">
-          <p>This example shows you all the options available.</p>
+          <h3>Full options</h3>
+          <p>Shows you the full array of options you can use.</p>
           <button for="full">Try it!</button>
         </div>
         <div class="code">
@@ -34,7 +36,66 @@ notifier.notify('Calendar', {
 })
           </textarea>
         </div>
-      </div>
+      </section>
+      <section class="sample">
+        <div class="talk">
+          <h3>Click event</h3>
+          <p>Click on the notifiation to see the alert.</p>
+          <button for="click">Try it!</button>
+        </div>
+        <div class="code">
+          <textarea id="click">
+const notifier = require('electron-notifications')
+
+const notification = notifier.notify('Calendar')
+
+notification.on('clicked', () => {
+  notification.close()
+  alert('I was clicked!')
+})
+          </textarea>
+        </div>
+      </section>
+      <section class="sample">
+        <div class="talk">
+          <h3>Swipe right event</h3>
+          <p>Swipe the notification right to trigger the alert.</p>
+          <button for="swipeRight">Try it!</button>
+        </div>
+        <div class="code">
+          <textarea id="swipeRight">
+const notifier = require('electron-notifications')
+
+const notification = notifier.notify('Calendar')
+
+notification.on('swipeRight', () => {
+  notification.close()
+  alert('I was swiped!')
+})
+          </textarea>
+        </div>
+      </section>
+      <section class="sample">
+        <div class="talk">
+          <h3>Click button</h3>
+          <p>Click a button to see the action</p>
+          <button for="clickButton">Try it!</button>
+        </div>
+        <div class="code">
+          <textarea id="clickButton">
+const notifier = require('electron-notifications')
+
+const notification = notifier.notify('Calendar', {
+  buttons: ['Dismiss', 'Snooze'],
+})
+
+notification.on('buttonClicked', (text) => {
+  notification.close()
+  alert('You clicked "' + text + '"')
+})
+          </textarea>
+        </div>
+      </section>
     </div>
     <link href='http://fonts.googleapis.com/css?family=Lora|Istok+Web:700' rel='stylesheet' type='text/css'/>
     <link href="assets/codemirror.css" rel="stylesheet" />
