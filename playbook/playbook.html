@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Notification Playbook</title>
+  </head>
+  <body>
+    <div id="playbook">
+      <h2>Electron Notification Playbook</h2>
+      <div class="sample">
+        <div>
+          <p>The minimum requirements.</p>
+          <button for="simple">Try it!</button>
+        </div>
+        <textarea id="simple">
+const notifier = require('electron-notifications')
+notifier.notify('Calendar')
+        </textarea>
+      </div>
+      <div class="sample">
+        <div>
+          <p>This example shows you all the options available.</p>
+          <button for="full">Try it!</button>
+        </div>
+        <textarea id="full">
+const notifier = require('electron-notifications')
+notifier.notify('Calendar', {
+  message: 'Event begins in 10 minutes',
+  icon: 'http://cl.ly/J49B/3951818241085781941.png',
+  buttons: ['Dismiss', 'Snooze'],
+})
+        </textarea>
+      </div>
+    </div>
+    <script src="run.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lora|Istok+Web:700' rel='stylesheet' type='text/css'/>
+    <link href="run.css" rel="stylesheet" />
+  </body>
+</html>

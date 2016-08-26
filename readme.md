@@ -26,6 +26,16 @@ notifier.notify('Calendar', {
 npm install --save electron-notifications
 ~~~
 
+## Playbook
+
+If you'd like to see this in action you can run the playbook and try out live
+examples and edit the code in place.
+
+~~~
+git clone git@github.com:blainesch/electron-notifications.git
+npm run playbook
+~~~
+
 ## Introduction
 
 When you create a new notification, your notification is queued, since we only

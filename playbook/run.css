@@ -1,0 +1,23 @@
+body {
+  background-color: #eeeeee;
+  font-size: 15px;
+  font-family: 'Lora', serif;
+}
+
+h2 {
+  font-family: 'Istok Web', sans-serif;
+}
+
+.sample {
+  display: flex;
+}
+
+.sample div {
+  flex: 1;
+}
+
+.sample textarea {
+  flex: 2;
+  height: 200px;
+  margin: 15px;
+}
