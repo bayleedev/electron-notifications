@@ -61,8 +61,8 @@ notification.on('clicked', () => {
 
 ### Swiped Right
 
-When the notification has been swiped to the right. This usually indiciated the
-user wants to dismiss the notification.
+When the notification has been swiped to the right. This usually indicates that
+the user wants to dismiss the notification.
 
 ~~~ javascript
 const notification = notifier.notify('Calendar')
