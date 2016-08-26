@@ -10,14 +10,20 @@ h2 {
 
 .sample {
   display: flex;
+  padding: 20px 0;
 }
 
-.sample div {
+.sample div.talk {
   flex: 1;
 }
 
-.sample textarea {
+.sample div.code {
   flex: 2;
   height: 200px;
-  margin: 15px;
+  padding: 15px;
+}
+
+.CodeMirror {
+  height: 200px;
+  font-size: 14px;
 }

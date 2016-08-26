@@ -8,32 +8,39 @@
     <div id="playbook">
       <h2>Electron Notification Playbook</h2>
       <div class="sample">
-        <div>
+        <div class="talk">
           <p>The minimum requirements.</p>
           <button for="simple">Try it!</button>
         </div>
-        <textarea id="simple">
+        <div class="code">
+          <textarea id="simple">
 const notifier = require('electron-notifications')
 notifier.notify('Calendar')
-        </textarea>
+          </textarea>
+        </div>
       </div>
       <div class="sample">
-        <div>
+        <div class="talk">
           <p>This example shows you all the options available.</p>
           <button for="full">Try it!</button>
         </div>
-        <textarea id="full">
+        <div class="code">
+          <textarea id="full">
 const notifier = require('electron-notifications')
 notifier.notify('Calendar', {
   message: 'Event begins in 10 minutes',
   icon: 'http://cl.ly/J49B/3951818241085781941.png',
   buttons: ['Dismiss', 'Snooze'],
 })
-        </textarea>
+          </textarea>
+        </div>
       </div>
     </div>
-    <script src="run.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Lora|Istok+Web:700' rel='stylesheet' type='text/css'/>
-    <link href="run.css" rel="stylesheet" />
+    <link href="assets/codemirror.css" rel="stylesheet" />
+    <link href="assets/run.css" rel="stylesheet" />
+    <script src="assets/codemirror.js"></script>
+    <script src="assets/codemirror-js.js"></script>
+    <script src="assets/run.js"></script>
   </body>
 </html>
