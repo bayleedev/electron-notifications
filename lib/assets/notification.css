@@ -17,7 +17,6 @@ html, body {
 }
 #notification.vertical.single {
   height: 120px;
-
 }
 #notification.vertical.double {
   height: 160px;
@@ -50,6 +49,9 @@ html, body {
 }
 #notification.actions .message:before {
   border-radius: 0;
+}
+#notification.vertical.actions .message {
+  width: 310px;
 }
 #notification .message {
   height: 80px;
