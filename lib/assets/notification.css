@@ -50,6 +50,9 @@ html, body {
 #notification.actions .message:before {
   border-radius: 0;
 }
+#notification.vertical.actions .message:before {
+  border-radius: 10px;
+}
 #notification.vertical.actions .message {
   width: 310px;
 }
@@ -117,6 +120,12 @@ html, body {
   border-radius: 0 0 10px 0;
   top: 40px;
 }
+#notification #buttons.vertical.single a:nth-child(1) {
+  border-radius: 0 0 10px 10px;
+}
+#notification #buttons.vertical.double a:nth-child(2) {
+  border-radius: 0 0 10px 10px;
+}
 #notification #buttons.single a {
   height: 80px;
   line-height: 80px;
@@ -132,6 +141,9 @@ html, body {
   text-align: center;
   text-decoration: none;
   right: 0;
+}
+#notification.vertical #buttons a {
+  border-left: 0;
 }
 #notification #buttons a:active {
   background: #147EFB;
