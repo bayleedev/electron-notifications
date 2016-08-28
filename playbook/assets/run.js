@@ -3,8 +3,8 @@ const textareas = {}
 document.querySelectorAll('textarea').forEach((snippet) => {
   textareas[snippet.id] = CodeMirror.fromTextArea(snippet, {
     mode: 'javascript',
-    lineNumbers: true,
-  });
+    lineNumbers: true
+  })
 })
 
 document.querySelectorAll('button').forEach((button) => {
