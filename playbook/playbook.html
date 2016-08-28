@@ -39,6 +39,24 @@ notifier.notify('Calendar', {
       </section>
       <section class="sample">
         <div class="talk">
+          <h3>Vertical Buttons</h3>
+          <p>If you prefer to use the vertical buttons style.</p>
+          <button for="vertical">Try it!</button>
+        </div>
+        <div class="code">
+          <textarea id="vertical">
+const notifier = require('electron-notifications')
+notifier.notify('Calendar', {
+  message: 'Event begins in 10 minutes',
+  icon: 'http://cl.ly/J49B/3951818241085781941.png',
+  buttons: ['Dismiss', 'Snooze'],
+  vertical: true,
+})
+          </textarea>
+        </div>
+      </section>
+      <section class="sample">
+        <div class="talk">
           <h3>Click event</h3>
           <p>Click on the notifiation to see the alert.</p>
           <button for="click">Try it!</button>
@@ -89,9 +107,9 @@ const notification = notifier.notify('Calendar', {
   buttons: ['Dismiss', 'Snooze'],
 })
 
-notification.on('buttonClicked', (text) => {
+notification.on('buttonClicked', (text, index) => {
   notification.close()
-  alert('You clicked "' + text + '"')
+  alert('You clicked "' + text + '" at index ' + index)
 })
           </textarea>
         </div>
