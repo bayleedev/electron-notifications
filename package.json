@@ -1,6 +1,6 @@
 {
   "name": "electron-notifications",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A node module for sending notifications in electron applications",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,9 @@
   "author": "Blaine Schmeisser",
   "license": "MIT",
   "standard": {
-    "globals": [ "CodeMirror" ],
+    "globals": [
+      "CodeMirror"
+    ],
     "ignore": [
       "playbook/assets/vendor"
     ]
