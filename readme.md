@@ -50,7 +50,8 @@ All options are optional.
 * `icon`: The absolute URL of a icon displayed to the left of the text.
 * `buttons`: One or two buttons to display on the right of the notification.
 * `vertical`: Boolean (default: false) that specifies that the buttons should be stacked vertically.
-* `duration`: Duration in milliseconds (default: 4000) to show the notification
+* `duration`: Integer duration in milliseconds (default: 4000) to show the notification.
+* `flat`: Boolean (default: false) that specifies to use a flat button style notification.
 
 ## Events
 
