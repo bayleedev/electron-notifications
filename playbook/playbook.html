@@ -40,6 +40,27 @@ notifier.notify('Calendar', {
       </section>
       <section class="sample">
         <div class="talk">
+          <h3>Stacking</h3>
+          <p>Shows you the full array of options you can use with stacking</p>
+          <p>{i} will be replaced with the count</p>
+          <input type="text" id="stack-num" value="10"/>
+          <input type="text" id="stack-delay" value="1000"/>
+          <button for="stacking">Try it!</button>
+        </div>
+        <div class="code">
+          <textarea id="stacking">
+const notifier = require('electron-notifications')
+notifier.notify('Calendar {i}', {
+  message: 'Event begins in 10 minutes',
+  icon: 'http://cl.ly/J49B/3951818241085781941.png',
+  buttons: ['Dismiss', 'Snooze'],
+  duration : 10000
+})
+          </textarea>
+        </div>
+      </section>
+      <section class="sample">
+        <div class="talk">
           <h3>Vertical Buttons</h3>
           <p>If you prefer to use the vertical buttons style.</p>
           <button for="vertical">Try it!</button>

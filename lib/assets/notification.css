@@ -1,5 +1,6 @@
 html, body {
   overflow: hidden;
+  background: rgba(0, 0, 0, 0);
 }
 
 #notification {
