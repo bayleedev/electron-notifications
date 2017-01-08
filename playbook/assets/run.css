@@ -27,3 +27,11 @@ h2 {
   height: 200px;
   font-size: 14px;
 }
+
+#stack-num {
+	width : 50px;
+}
+
+#stack-delay {
+	width : 50px;
+}
