@@ -88,16 +88,19 @@ notification.on('swipedRight', () => {
 ### Button Clicked
 
 When any one of the buttons are clicked, it'll trigger a `buttonClicked` event,
-and pass the text that was clicked to the handler.
+and pass the text, button index and options to the handler.
 
 ~~~ javascript
 const notification = notifier.notify('Calendar', {
   buttons: ['Dismiss', 'Snooze'],
+  url: "http://google.com"
 })
 
-notification.on('buttonClicked', (text) => {
+notification.on('buttonClicked', (text, buttonIndex, options) => {
   if (text === 'Snooze') {
     // Snooze!
+  } else if(buttonIndex === 1) {
+    //open options.url
   }
   notification.close()
 })
