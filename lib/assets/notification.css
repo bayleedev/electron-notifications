@@ -1,18 +1,24 @@
 html, body {
   overflow: hidden;
   background: rgba(0, 0, 0, 0);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
 }
 
 #notification {
   height: 80px;
   width: 400px;
-  margin: 20px;
-  border-radius: 10px;
+  margin: 0;
   position: relative;
-  color: #746F6E;
   font-family: Helvetica, Arial, sans-serif;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(235, 235, 235, 0.95));
+  background-image: linear-gradient(rgba(120, 119, 119, 0.95), rgba(75, 74, 74, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
   -webkit-app-region: drag;
   -webkit-user-select: none;
 }
@@ -26,8 +32,6 @@ html, body {
   width: 90px;
   height: 80px;
   float: left;
-  border-radius: 10px 0 0 10px;
-  box-shadow: inset 8px 0 10px 2px rgba(245, 245, 245, 0.95);
 }
 #notification .icon img {
   padding: 10px 15px 0 15px;
@@ -46,16 +50,10 @@ html, body {
   -webkit-app-region: drag;
 }
 #notification.actions .message {
-  width: 209px;
-}
-#notification.actions .message:before {
-  border-radius: 0;
-}
-#notification.vertical.actions .message:before {
-  border-radius: 10px;
+  width: 205px;
 }
 #notification.vertical.actions .message {
-  width: 310px;
+  width: 308px;
 }
 #notification .message {
   height: 80px;
@@ -73,8 +71,6 @@ html, body {
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 0 10px 10px 0;
-  box-shadow: inset -15px 0 10px 2px rgba(245, 245, 245, 0.95);
 }
 #notification .message.onlyTitle h2 {
   padding: 30px;
@@ -83,18 +79,20 @@ html, body {
   padding: 20px 0 0 0px;
   margin: 0 0 5px;
   font: bold 18px Myriad, Helvetica, Arial, sans-serif;
-  text-shadow: 0px 2px 1px #fff;
 }
 #notification .message p {
   padding: 0;
   margin: 0;
   font: bold 13px Myriad, Helvetica, Arial, sans-serif;
-  text-shadow: 0px 1px 1px #fff;
   font-weight: normal;
 }
 #notification #buttons {
   float: right;
   position: relative;
+}
+#notification.horizontal #buttons {
+  border-left: 1px solid black;
+  box-shadow: inset 1px 0 rgba(255, 255, 255, 0.4);
 }
 #notification.vertical #buttons {
   width: 100%;
@@ -111,51 +109,34 @@ html, body {
   width: 100%;
   height: 40px;
   line-height: 40px;
+  border-top: 1px solid black;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
 }
 #notification.double #buttons a {
   height: 40px;
   line-height: 40px;
 }
-#notification.double #buttons a:nth-child(1) {
-  border-radius: 0 10px 0 0;
+#notification.double.horizontal #buttons a:nth-child(2) {
+  border-top: 1px solid black;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);
 }
 #notification.double #buttons a:nth-child(2) {
-  box-sizing: border-box;
-  border-top: 1px solid #D7D7D7;
-  border-radius: 0 0 10px 0;
   top: 40px;
-}
-#notification.vertical.double #buttons a:nth-child(2),
-#notification.vertical.single #buttons a:nth-child(1) {
-  border-radius: 0 0 10px 10px;
 }
 #notification.single #buttons a {
   height: 80px;
   line-height: 80px;
-  border-radius: 0 10px 10px 0;
 }
 #notification #buttons a {
+  box-sizing: border-box;
   top: 0;
   display: block;
   width: 100px;
-  border-left: 1px solid #D7D7D7;
-  color: #222;
   font: 13px Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   right: 0;
 }
-#notification.vertical #buttons a {
-  border-left: 0;
-}
 #notification #buttons a:active {
-  background: #147EFB;
-  color: #fff;
-}
-.flat, .flat:before,
-#notification.flat, #notification.flat:before,
-#notification #buttons.flat, #notification #buttons.flat:before,
-#notification .icon.flat, #notification .icon.flat:before,
-#notification .message.flat, #notification .message.flat:before  {
-  border-radius: 0px;
+  background-color: rgba(75, 74, 74, 0.95);
 }

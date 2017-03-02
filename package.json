@@ -4,6 +4,7 @@
   "description": "A node module for sending notifications in electron applications",
   "main": "index.js",
   "scripts": {
+    "start": "npm run playbook",
     "playbook": "electron playbook/main.js",
     "lint": "standard"
   },
