@@ -110,7 +110,7 @@ const notifier = require('electron-notifications')
 
 const notification = notifier.notify('Calendar')
 
-notification.on('swipeRight', () => {
+notification.on('swipedRight', () => {
   notification.close()
   alert('I was swiped!')
 })
