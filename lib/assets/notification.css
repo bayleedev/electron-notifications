@@ -49,7 +49,7 @@ a {
 #notification .message p {
   -webkit-app-region: drag;
 }
-#notification.actions .message {
+#notification.horizontal.actions .message {
   width: 205px;
 }
 #notification.vertical.actions .message {
@@ -57,7 +57,7 @@ a {
 }
 #notification .message {
   height: 80px;
-  width: 310px;
+  width: 308px;
   float: left;
   text-overflow: clip;
   white-space: nowrap;

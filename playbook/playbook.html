@@ -40,6 +40,23 @@ notifier.notify('Calendar', {
       </section>
       <section class="sample">
         <div class="talk">
+          <h3>No Buttons</h3>
+          <p>If you don't like buttons, this one is for you!</p>
+          <button for="nobuttons">Try it!</button>
+        </div>
+        <div class="code">
+          <textarea id="nobuttons">
+const notifier = require('electron-notifications')
+notifier.notify('Calendar', {
+  message: 'Event begins in 10 minutes',
+  icon: 'http://cl.ly/J49B/3951818241085781941.png',
+  duration : 60000
+})
+          </textarea>
+        </div>
+      </section>
+      <section class="sample">
+        <div class="talk">
           <h3>Stacking</h3>
           <p>Shows you the full array of options you can use with stacking</p>
           <p>{i} will be replaced with the count</p>
