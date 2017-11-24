@@ -18,7 +18,6 @@ html, body {
 }
 
 #notification {
-  /* background-image: linear-gradient(rgba(120, 119, 119, 0.95), rgba(75, 74, 74, 0.95)); */
   display: flex;
   flex-direction: row;
   width: 100%;

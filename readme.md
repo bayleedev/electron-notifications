@@ -50,8 +50,10 @@ All options are optional.
 * `icon`: The absolute URL of a icon displayed to the left of the text.
 * `buttons`: One or two buttons to display on the right of the notification.
 * `vertical`: Boolean (default: false) that specifies that the buttons should be stacked vertically.
-* `duration`: Integer duration in milliseconds (default: 4000) to show the notification. 0 to make it stay til clicked. Be carefull with this option. If you don't set a click event the notification will stay forever.
+* `duration`: Integer duration in milliseconds (default: 4000) to show the notification. 0 to make it stay til clicked. Be carefull with this option. If you don't set a button the notification will stay forever.
 * `flat`: Boolean (default: false) that specifies to use a flat button style notification.
+* `backgroundColor`: Overrides the default background color of notification
+* `buttonsColor`: Overrides the default color of buttons
 
 ## Events
 
