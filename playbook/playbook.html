@@ -35,11 +35,11 @@ const notifier = require('electron-notifications')
 const notification = notifier.notify({
   message: 'Event begins in 10 minutes',
   icon: 'http://cl.ly/J49B/3951818241085781941.png',
-  buttons: ['Dismiss', 'Snooze'],
+  buttons: ['Dismiss'],
   duration : 0
 })
 
-notification.on('clicked', () => {
+notification.on('buttonClicked', () => {
   notification.close()
 })
         </textarea>

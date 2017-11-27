@@ -32,7 +32,7 @@ html, body {
   display: flex;
   flex-direction: row;
   flex: 1;
-  
+  -webkit-app-region: drag;
 }
 
 #icon {
