@@ -1,5 +1,5 @@
 {
-  "name": "electron-notifications",
+  "name": "@valudio/electron-notifications",
   "version": "1.0.1",
   "description": "A node module for sending notifications in electron applications",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "terminal-notifier",
     "notify"
   ],
-  "repository": "git@github.com:blainesch/electron-notifications.git",
+  "repository": "git@github.com:valudio/electron-notifications.git",
   "author": "Blaine Schmeisser",
   "license": "MIT",
   "standard": {
