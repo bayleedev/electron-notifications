@@ -18,8 +18,8 @@
     "terminal-notifier",
     "notify"
   ],
-  "repository": "git@github.com:valudio/electron-notifications.git",
-  "author": "Blaine Schmeisser & Valudio",
+  "repository": "git@github.com:blainesch/electron-notifications.git",
+  "author": "Blaine Schmeisser",
   "license": "MIT",
   "standard": {
     "globals": [
