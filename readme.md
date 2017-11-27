@@ -54,6 +54,7 @@ All options are optional.
 * `flat`: Boolean (default: false) that specifies to use a flat button style notification.
 * `backgroundColor`: Overrides the default background color of notification
 * `buttonsColor`: Overrides the default color of buttons
+* `devTools`: Opens the dev tools in all notifications
 
 ## Events
 
