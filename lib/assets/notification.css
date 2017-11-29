@@ -37,6 +37,7 @@ html, body {
 
 #icon {
   width: 75px;
+  padding: 10px;
 }
 #text {
   flex: 1;
@@ -46,17 +47,18 @@ html, body {
 }
 #text .title {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0 0 5px;
 }
 #text .description {
   font-weight: normal;
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 0;
 }
 #buttons {
   width: 100px;
   flex-direction: column;
+  border-left: 1px solid black;
 }
 .vertical #buttons {
   width: 100%;
