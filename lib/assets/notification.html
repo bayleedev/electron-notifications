@@ -1,26 +1,25 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Notification</title>
     <link href="notification.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <div class="container">
-        <div id="notification">
-            <div class="icon">
-                <img id="icon">
+
+<body id="main">
+    <div id="notification">
+        <article class="group">
+            <div id="icon" class="icon"></div>
+            <div id="text" class="container unselectable">
+                <p id="title" class="title"></p>
+                <p id="message" class="description"></p>
             </div>
 
-            <div class="message">
-                <h2 id="title"></h2>
-                <p id="message"></p>
-            </div>
-
-            <div id="buttons"></div>
-        </div>
+        </article>
+        <div id="buttons" class="container"></div>
     </div>
-
     <script src="../app.js"></script>
 </body>
+
 </html>
